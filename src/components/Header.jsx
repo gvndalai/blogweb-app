@@ -1,11 +1,13 @@
 import React from "react";
-import { MetaBlogIcon } from "@/icons/MetablogIcon";
+import { MetaBlogIcon } from "@/icons/MetaBlogIcon";
 import { SearchIcon } from "@/icons/SearchIcon";
+import { Menu } from "@/icons/Menu";
 export const Header = () => {
   return (
-    <div className="px-[350px] py-8 flex gap-[118px] items-center">
+    <div className="sm:px-[350px] p-5 sm:py-8 flex sm:gap-[118px] items-center justify-between w-full">
       <MetaBlogIcon />
-      <div className="flex items-center gap-[21px]">
+      <Menu responsive="sm:hidden block" />
+      <div className=" sm:block hidden sm:flex sm:items-center sm:gap-[21px]">
         {" "}
         <div className="flex items-center gap-10 w-[667px] text-gray-700 font-work-sans text-base font-normal leading-6 justify-center">
           <div>Home</div>
