@@ -6,7 +6,10 @@ export const Card = () => {
   useEffect(() => {
     fetch("https://dev.to/api/articles")
       .then((response) => response.json())
-      .then((data) => setArticles(data));
+      .then((data) => setArticles(data))
+      .catch((error) => {
+        console.log(error, "error");
+      });
   }, []);
 
   return (
