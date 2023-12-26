@@ -13,8 +13,26 @@ export const Card = () => {
   }, []);
 
   return (
-    <div>
-      <div className="flex flex-col justify-center items-center gap-4 p-4 grid grid-cols-3 ">
+    <div className="flex flex-col gap-[32px] ">
+      <div className="flex flex-col gap-[32px] p-4 ">
+        <div className="text-secondary-800 font-worksans text-xl font-bold leading-7">
+          All Blog Post
+        </div>
+        <div className="flex justify-between">
+          <div className="flex text-gray-700 font-worksans text-xs font-bold leading-5 gap-[20px]">
+            <div className="text-orange-300">All</div>
+            <div>Design</div>
+            <div>Travel</div>
+            <div>Fashion</div>
+            <div>Technology</div>
+            <div>Branding</div>
+          </div>
+          <div className="text-gray-700 font-worksans text-xs font-bold leading-5">
+            View All
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center items-center gap-4 p-4 grid grid-cols-3  ">
         {articles.map((article) => (
           <div className="w-[392px] border border-gray-200 p-[16px] gap-[16px] rounded-[6px]">
             <img src={article.social_image} className="w-full h-[210px]"></img>
