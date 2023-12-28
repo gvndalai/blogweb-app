@@ -1,4 +1,4 @@
-import { Header } from "@/components/Header";
+import { Tolgoi } from "@/components/Tolgoi";
 import { Hero } from "@/components/Hero";
 import { Card } from "@/components/Card";
 import { TrendingCard } from "@/components/TrendingCard";
@@ -14,7 +14,7 @@ export default function Home() {
         ></meta>
       </Head>
       <div className="sm:w-[1920px] w-[390px] bg-white flex flex-col items-center gap-[100px]">
-        <Header />
+        <Tolgoi />
         <Hero />
         <TrendingCard />
         <Card />
