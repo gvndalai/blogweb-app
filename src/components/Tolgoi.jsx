@@ -1,7 +1,7 @@
 import React from "react";
 import { MetaBlogIcon } from "@/icons/metaBlogIcon";
 import { SearchIcon } from "@/icons/searchIcon";
-import { Menu } from "@/icons/menu";
+import { Menu } from "@/icons/Menu";
 export const Tolgoi = () => {
   return (
     <div className="sm:px-[350px] p-5 sm:py-8 flex sm:gap-[118px] items-center justify-between w-full">
