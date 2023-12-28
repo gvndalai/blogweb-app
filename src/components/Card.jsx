@@ -32,7 +32,7 @@ export const Card = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-4 p-4 grid grid-cols-3  ">
+      <div className="gap-4 p-4 grid grid-cols-3  ">
         {articles.map((article) => (
           <div className="w-[392px] border border-gray-200 p-[16px] gap-[16px] rounded-[6px]">
             <img src={article.social_image} className="w-full h-[210px]"></img>
