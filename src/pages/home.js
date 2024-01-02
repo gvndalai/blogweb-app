@@ -1,6 +1,9 @@
 import React from "react";
+import { Tolgoi } from "@/components/Tolgoi";
 export const Home = () => {
-    return (
-        
-    )
-}
+  return (
+    <div>
+      <Tolgoi />;
+    </div>
+  );
+};
