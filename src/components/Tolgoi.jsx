@@ -10,9 +10,9 @@ export const Tolgoi = () => {
       <div className=" sm:block hidden sm:flex sm:items-center sm:gap-[21px]">
         {" "}
         <div className="flex items-center gap-10 w-[667px] text-gray-700 font-work-sans text-base font-normal leading-6 justify-center">
-          <div>Home</div>
-          <div>Blog</div>
-          <div>Contact</div>
+          <link href="/home">Home</link>
+          <link href="/blog">Blog</link>
+          <link href="/contact">Contact</link>
         </div>
         <div className="flex items-center gap-[12px] p-2 pl-4 w-[166px] justify-between bg-gray-100 rounded-[5px] ">
           <div className="flex justify-start text-gray-400">Search</div>
