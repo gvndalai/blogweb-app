@@ -2,6 +2,7 @@ import { Tolgoi } from "@/components/Tolgoi";
 import { Hero } from "@/components/Hero";
 import { Card } from "@/components/Card";
 import { TrendingCard } from "@/components/TrendingCard";
+import { Footer } from "@/components/Footer";
 import Head from "next/head";
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <TrendingCard />
         <Card />
       </div>
+      <Footer />
     </>
   );
 }
