@@ -2,9 +2,15 @@ import React from "react";
 import { BlueButton } from "@/components/BlueButton";
 import { Tolgoi } from "@/components/Tolgoi";
 import { Footer } from "@/components/Footer";
+import Head from "next/head";
+import { useRouter } from "next/router";
 const Contact = () => {
   return (
     <>
+      <Head>
+        <title>Contact</title>
+      </Head>
+
       <div className="flex flex-col items-center mb-[100px] sm:w-[1920px] w-[390px] bg-white flex flex-col items-center gap-[100px]">
         <Tolgoi />
         <div className="flex flex-col items-center mt-[100px]">
@@ -74,8 +80,8 @@ const Contact = () => {
             <BlueButton text="Send message" />
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
