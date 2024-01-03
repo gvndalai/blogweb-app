@@ -1,6 +1,6 @@
 import React from "react";
 import { BlueButton } from "@/components/BlueButton";
-import { Tolgoi } from "@/components/Tolgoi";
+import { Header, Tolgoi } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -12,7 +12,7 @@ const Contact = () => {
       </Head>
 
       <div className="flex flex-col items-center mb-[100px] sm:w-[1920px] w-[390px] bg-white flex flex-col items-center gap-[100px]">
-        <Tolgoi />
+        <Header />
         <div className="flex flex-col items-center mt-[100px]">
           <div className="flex flex-col gap-[20px] items-center w-[769px] h-[389px] p-[14px] px-[10px] pt-[0px] pb-[10px] flex-shrink-0">
             <div className="flex flex-col gap-[20px] w-[624px] ">

@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { SearchContextValue } from "@/context/SearchContext";
 
 export const Card = () => {
+  const { searchValue, setSearchValue } = useContext(SearchContextValue);
+
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -11,6 +14,9 @@ export const Card = () => {
         console.log(error, "error");
       });
   }, []);
+  const searchedArticles = articles.filter((article) =>
+    article.description.toLowerCase().includes(searchValue.toLowerCase())
+  );
 
   return (
     <div className="flex flex-col gap-[32px] ">
@@ -33,9 +39,15 @@ export const Card = () => {
         </div>
       </div>
       <div className="gap-4 p-4 grid grid-cols-3 gap-x-4 gap-y-4">
-        {articles.map((article) => (
-          <div className="w-[392px] border border-gray-200 p-[16px] gap-[16px] rounded-[6px]">
-            <img src={article.social_image} className="w-full h-[210px]"></img>
+        {searchedArticles.map((article) => (
+          <div
+            className="w-[392px] border border-gray-200 p-[16px] gap-[16px] rounded-[6px]"
+            key={article.id}
+          >
+            <img
+              src={article.social_image}
+              className="w-full h-[210px] rounded-[6px]"
+            ></img>
             <div className="p-2 flex flex-col gap-5">
               <div className="flex flex-col gap-4">
                 <button className="text-blue-500 font-worksans text-base font-medium leading-5 bg-gray-100 flex items-center justify-center gap-1 p-1 rounded-[6px] w-fit">

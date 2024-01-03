@@ -3,7 +3,7 @@ import { MetaBlogIcon } from "@/icons/metaBlogIcon";
 import Link from "next/link";
 export const Footer = () => {
   return (
-    <div className=" w-screen bg-gray-200 px-[352px] pt-[64px] flex flex-col gap-[25px] items-center m-0">
+    <div className=" w-full bg-gray-200 px-[352px] pt-[64px] flex flex-col gap-[25px] items-center m-0">
       <div className="flex gap-[20px] justify-between w-full ">
         <div className="flex flex-col gap-[24px] w-[289px]">
           <div>
